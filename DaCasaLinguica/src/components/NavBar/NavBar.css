@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #F9F4EF;
-    padding: 15px 100px 15px 100px;
+    padding: 15px 80px;
 }
 
 .logo {
@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    left: -160px;
+    left: -80px;
 }
 
 .title {
@@ -21,10 +21,14 @@ header {
     font-weight: 700;
     flex: 1;
     text-align: center;
+    position: relative;
+    left: -30px;
+    font-style:normal;
 }
 
 .navbar {
     display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -39,7 +43,6 @@ header {
     text-decoration: none;
     color: #F25042;
     font-size: 24px;
-    font-style: italic;
     font-weight: 700;
     line-height: normal;
     position: relative;        
@@ -59,4 +62,98 @@ header {
 
 .navlink:hover::before {
     transform: scaleX(1); /
+}
+
+
+.menu-icon {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 7rem;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F25042;
+    border-radius: 5px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Inicialmente fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #F9F4EF;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out; /* Suavizar a transição */
+    z-index: 999;
+    padding: 20px;
+    display: none; /* Inicialmente escondido */
+}
+
+.modal.open {
+    right: 0; /* Quando o modal for aberto, ele aparece à direita */
+    display: block;
+}
+
+.modal .nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.modal .navlink {
+    color: #F25042;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 35px; /* Ajustar padding para telas menores */
+    }
+
+    .logo {
+        left: 0;
+        height: 80px;
+        width: 80px;
+    }
+
+    .title {
+        left: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Exibir o ícone de menu no celular */
+    .menu-icon {
+        display: flex; /* Mostrar o ícone de menu */
+    }
+
+    .modal .menu-icon {
+        left: 210px;
+    }
+
+    /* Esconder os links de navegação em dispositivos móveis */
+    .nav-list {
+        display: none; /* Links de navegação são escondidos */
+    }
 }

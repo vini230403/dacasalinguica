@@ -1,0 +1,69 @@
+.swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+/* Centraliza o slider */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Container que agrupa as setas e os bullets */
+.controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Personaliza as setas */
+.custom-prev, .custom-next {
+    font-size: 24px;
+    color: #F25042; /* Cor das setas */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.custom-prev:hover, .custom-next:hover {
+    transform: scale(1.2);
+}
+
+/* Personaliza os bullets */
+.custom-pagination .swiper-pagination-bullet {
+    background-color: red !important;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #F25042 !important;
+}
+
+.img-center {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 230px;
+}
