@@ -3,19 +3,24 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #F9F4EF;
-    padding: 15px 77px 15px 115px;
+    padding: 15px 100px 15px 100px;
 }
 
 .logo {
     height: 100px;
     width: 100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -160px;
 }
 
 .title {
-    font-style: italic;
+    font-family: "Dancing Script", cursive;
     font-weight: 700;
-    line-height: normal;
-    margin-left: 10rem;
+    flex: 1;
+    text-align: center;
 }
 
 .navbar {
@@ -23,14 +28,11 @@ header {
 }
 
 .nav-list {
+    flex: 1;
     display: flex;
-    align-items: center;
-    list-style: none;
+    justify-content: flex-end;
     gap: 1.2rem;
-}
-
-.nav-list li {
-    margin-left: 1rem;
+    list-style: none;
 }
 
 .nav-list .navlink {
@@ -39,7 +41,8 @@ header {
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
-    line-height: normal;        
+    line-height: normal;
+    position: relative;        
 }
 
 .navlink::before {
@@ -51,4 +54,9 @@ header {
     border-radius: 5px;
     transform: scaleX(0);
     transition: all 0.6s ease;
+    bottom: 0;
+}
+
+.navlink:hover::before {
+    transform: scaleX(1); /
 }

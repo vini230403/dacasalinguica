@@ -13,13 +13,13 @@ const NavBar = () => {
                     <NavLink to="/" className="navlink">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/" className="navlink">Produto</NavLink>
+                    <NavLink to="/produtos" className="navlink">Produtos</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/" className="navlink">Sobre Nós</NavLink>
+                    <NavLink to="/sobrenos" className="navlink">Sobre Nós</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/" className="navlink">Contato</NavLink>
+                    <NavLink to="/contato" className="navlink">Contato</NavLink>
                 </li>
             </ul>
         </nav>
