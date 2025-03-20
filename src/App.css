@@ -2,7 +2,10 @@
     width: 87vw;
     background-color: #F9F4EF;
     min-height: 100vh;
-    margin: 70px auto;
+    margin:  auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 768px) {

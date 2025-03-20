@@ -21,8 +21,8 @@ const Home = () => {
         autoplay={{ delay: 5000, disableOnInteraction: false}}
         loop={true}
       >
-        <SwiperSlide><img src="/public/img/banner_dacasa.jpg" alt="banner" /></SwiperSlide>
-        <SwiperSlide><img src="/public/img/banner2.jpg" alt="banner2" className='banner'/></SwiperSlide>
+        <SwiperSlide><img src="/img/banner_dacasa.jpg" alt="banner" /></SwiperSlide>
+        <SwiperSlide><img src="/img/banner2.jpg" alt="banner2" className='banner'/></SwiperSlide>
       </Swiper>
       <div className="controls-container">
         <div className="custom-prev"><FaChevronLeft /></div>
@@ -32,9 +32,9 @@ const Home = () => {
       <div className='texto'>
         <h1>Sabor autêntico em cada mordida, feito à mão com paixão!</h1>
         <div className='images'>
-          <img src="/public/img/cerveja.jpg" alt="cerveja" className='cerveja'/>
-          <img src="/public/img/geral.jpg" alt="geral" className='geral'/>
-          <img src="/public/img/pimenta.jpg" alt="pimenta" className='pimenta'/>
+          <img src="/img/cerveja.jpg" alt="cerveja" className='cerveja'/>
+          <img src="/img/geral.jpg" alt="geral" className='geral'/>
+          <img src="/img/pimenta.jpg" alt="pimenta" className='pimenta'/>
         </div>
       </div>
     </div>

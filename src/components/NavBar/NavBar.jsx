@@ -17,7 +17,7 @@ const NavBar = () => {
 
   return (
     <header>
-        <img src="/public/img/logo.svg" alt="logo" className='logo' />
+        <img src="/img/logo.svg" alt="logo" className='logo' />
         <h1 className='title'>Linguiças Artesanais</h1>
         <nav className='navbar'>
             <div class="menu-icon" id="menuIcon" onClick={toggleModal}>
