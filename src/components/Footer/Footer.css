@@ -1,13 +1,12 @@
 
 footer {
-    height: 150px;
+    height: auto;
     background-color: #8C7851;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 80px;
     position:relative;
-    left: 0;
 }
 
 .text {
@@ -78,4 +77,47 @@ ul li .location::before {
     margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
     vertical-align: middle; /* Alinha com o texto */
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 5px; /* Reduz o espaçamento lateral */
+        text-align: center; 
+    }
+
+    footer .text {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        left: 10px;
+        margin-bottom: 15px; /* Adiciona espaçamento abaixo do texto */
+      }
+
+    footer .logo {
+        width: 60px; /* Reduz o tamanho do logo */
+        height: 60px;
+        left: -8px;
+    }
+
+    .contact {
+        left: -10px;
+    }
+
+    .contact h2 {
+        position: relative;
+        font-size: 12px; /* Reduz o tamanho do título */
+        left: -25px;
+    }
+    
+    .contact a {
+        font-size: 10px; /* Reduz o tamanho dos links */
+        display: block; /* Coloca cada link em uma linha separada */
+        margin: 0;
+        left: 100px;
+    }
+
+    ul li .phone::before,
+    ul li .email::before,
+    ul li .location::before {
+        width: 1rem;
+        height: 1rem;
+    }
 }

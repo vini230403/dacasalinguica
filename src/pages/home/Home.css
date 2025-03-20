@@ -77,10 +77,12 @@
 }
 
 @media (max-width: 768px) {
-    .texto {
-        font-size: 14px;
-        position: relative;
-        width: 170px;
+    .slider-container {
+        margin-top: 0
+    }
+
+    .paixao {
+        font-size: 20px;
     }
 
     .img-center {
@@ -94,4 +96,9 @@
         width: 100%;
         height: 75px;
     }
+
+    .geral, .pimenta, .cerveja {
+        height: 200px;
+    }
+
 }

@@ -29,7 +29,7 @@ const Home = () => {
         <div className="custom-pagination"></div>
         <div className="custom-next"><FaChevronRight /></div>
       </div>
-      <div className='texto'>
+      <div>
         <h1 className='paixao'>Sabor autêntico em cada mordida, feito à mão com paixão!</h1>
         <div className='images'>
           <img src="/img/cerveja.jpg" alt="cerveja" className='cerveja'/>

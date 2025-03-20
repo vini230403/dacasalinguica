@@ -47,7 +47,7 @@ header {
 .nav-list .navlink {
     text-decoration: none;
     color: #F25042;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: normal;
     position: relative;        
@@ -95,7 +95,7 @@ header {
     top: 0;
     right: -300px; /* Inicialmente fora da tela */
     width: 300px;
-    height: 30%;
+    height: 35%;
     background-color: #F9F4EF;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease-in-out; /* Suavizar a transição */
@@ -138,6 +138,8 @@ header {
 }
 
 .modal-footer p {
+    display: flex;
+    text-align: center;
     font-size: 15px;
     padding: 0 10px;
 }
@@ -180,7 +182,7 @@ header {
 
     .modal .menu-icon {
         top: 10px;
-        left: 160px;
+        left: 200px;
     }
 
     /* Esconder os links de navegação em dispositivos móveis */
@@ -211,7 +213,7 @@ header {
 @media (max-width: 391px) {
     .modal .menu-icon {
         top: 10px;
-        left: 130px;
+        left: 190px;
     }
 
     .modal-footer p {
