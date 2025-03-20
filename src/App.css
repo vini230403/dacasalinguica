@@ -4,3 +4,9 @@
     min-height: 100vh;
     margin: 70px auto;
 }
+
+@media (max-width: 768px) {
+    .background {
+        margin: 40px auto;
+    }
+}

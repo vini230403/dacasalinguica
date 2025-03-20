@@ -59,6 +59,9 @@ const NavBar = () => {
                         <NavLink to="/contato" className="navlink" onClick={toggleModal}>Contato</NavLink>
                     </li>
                 </ul>
+                <footer className="modal-footer">
+                    <p>Desenvolvido por Vini</p>
+                </footer>
             </div>
         </nav>
     </header>

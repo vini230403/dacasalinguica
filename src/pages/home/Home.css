@@ -2,12 +2,17 @@
     width: 100%;
   }
   
-  .swiper-slide img {
+.swiper-slide img {
     width: 100%;
+    background-color: #F9F4EF;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-  }
-  
+}
+ 
+.swiper-slide .banner {
+    width: 100%;
+    height: 250px;
+}
 
 /* Centraliza o slider */
 .slider-container {
@@ -18,13 +23,6 @@
     width: 80%;
     margin: auto;
     padding: 50px 0;
-}
-
-.slide-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
 }
 
 /* Container que agrupa as setas e os bullets */
@@ -51,19 +49,41 @@
 
 /* Personaliza os bullets */
 .custom-pagination .swiper-pagination-bullet {
-    background-color: red !important;
+    background-color: #F25042 !important;
     width: 12px;
     height: 12px;
-    opacity: 1;
+    
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-    background-color: #F25042 !important;
+    background-color: red !important;
+    opacity: 1;
 }
 
-.img-center {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    left: 230px;
+.images {
+    display: flex;
+}
+
+.geral, .pimenta, .cerveja {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .texto {
+        font-size: 14px;
+        position: relative;
+        width: 170px;
+    }
+
+    .img-center {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: -18px;
+    }
+
+    .swiper-slide .banner {
+        width: 100%;
+        height: 75px;
+    }
 }
