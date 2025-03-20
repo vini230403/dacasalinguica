@@ -23,8 +23,8 @@ function App() {
             <Route path="/sobrenos" element={<SobreNos />}/>
             <Route path="/contato" element={<Contato />}/>
           </Routes>
-          <Footer />
         </div>
+        <Footer />
       </BrowserRouter>   
     </div>
   )

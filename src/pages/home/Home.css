@@ -1,6 +1,6 @@
 .swiper {
     width: 100%;
-  }
+}
   
 .swiper-slide img {
     width: 100%;
@@ -60,9 +60,14 @@
     opacity: 1;
 }
 
+.paixao {
+    text-align: center;
+    color: black;
+}
+
 .images {
     display: flex;
-    padding: 20px 0 70px;
+    padding: 20px 0 
 }
 
 .geral, .pimenta, .cerveja {

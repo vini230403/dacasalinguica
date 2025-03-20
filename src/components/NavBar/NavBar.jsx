@@ -8,12 +8,16 @@ import { NavLink } from "react-router-dom"
 const NavBar = () => {
 
     const [isModalMenu, setIsModalMenu] = useState(false)
+    const [activeLink, setActiveLink] = useState(null)
 
     const toggleModal = () => {
         setIsModalMenu(!isModalMenu)
     }
 
-
+    const handleLinkClick = (link) => {
+        setActiveLink(link)
+        setIsModalMenu(false)
+    }
 
   return (
     <header>
@@ -47,20 +51,44 @@ const NavBar = () => {
                 </div>
                 <ul className='nav-list'>
                     <li>
-                        <NavLink to="/" className="navlink" onClick={toggleModal}>Home</NavLink>
+                        <NavLink 
+                            to="/" 
+                            className={`navlink ${activeLink === "/" ? "active" : ""}`}
+                            onClick={() => handleLinkClick("/")}
+                        >
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/produtos" className="navlink" onClick={toggleModal}>Produtos</NavLink>
+                        <NavLink 
+                            to="/produtos" 
+                            className={`navlink ${activeLink === "/produtos" ? "active" : ""}`}
+                            onClick={() => handleLinkClick("/produtos")}
+                        >
+                            Produtos
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/sobrenos" className="navlink" onClick={toggleModal}>Sobre Nós</NavLink>
+                        <NavLink 
+                            to="/sobrenos" 
+                            className={`navlink ${activeLink === "/sobrenos" ? "active" : ""}`}
+                            onClick={() => handleLinkClick("/sobrenos")}
+                        >
+                            Sobre Nós
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contato" className="navlink" onClick={toggleModal}>Contato</NavLink>
+                        <NavLink 
+                            to="/contato" 
+                            className={`navlink ${activeLink === "/contato" ? "active" : ""}`}
+                            onClick={() => handleLinkClick("/contato")}
+                        >
+                            Contato
+                        </NavLink>
                     </li>
                 </ul>
                 <footer className="modal-footer">
-                    <p>Desenvolvido por Vini</p>
+                    <p>O Sabor da Tradição Artesanal!</p>
                 </footer>
             </div>
         </nav>

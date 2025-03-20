@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #F9F4EF;
-    padding: 15px 80px;
+    padding: 15px 90px;
 }
 
 .logo {
@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    left: -80px;
+    left: -100px;
     opacity: 2;
 }
 
@@ -21,10 +21,11 @@ header {
     font-family: "Dancing Script", cursive;
     font-weight: 700;
     font-size: 38px;
+    color: black;
     flex: 1;
     text-align: center;
     position: relative;
-    left: -20px;
+    left: -100px;
     font-style:normal;
 }
 
@@ -37,8 +38,10 @@ header {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: 1.2rem;
+    gap: 1.8rem;
     list-style: none;
+    position: relative;
+    left: -30px;
 }
 
 .nav-list .navlink {
@@ -90,9 +93,9 @@ header {
 .modal {
     position: fixed;
     top: 0;
-    right: -350px; /* Inicialmente fora da tela */
-    width: 250px;
-    height: 50%;
+    right: -300px; /* Inicialmente fora da tela */
+    width: 300px;
+    height: 30%;
     background-color: #F9F4EF;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease-in-out; /* Suavizar a transição */
@@ -125,12 +128,18 @@ header {
 
 .modal-footer {
     position: absolute;
+    height: 40px;
     bottom: 0;
     width: 100%;
     left: 0;
     background-color: #8C7851;
     text-align: center;
     padding: 1px 0;
+}
+
+.modal-footer p {
+    font-size: 15px;
+    padding: 0 10px;
 }
 
 
@@ -142,15 +151,15 @@ header {
     }
 
     .logo {
-        left: 0;
         height: 80px;
         width: 80px;
         opacity: 2;
+        left: 0px;
     }
 
     .title {
-        left: 3rem;
         font-size: 1.6rem;
+        left: 40px;
     }
 
     .navbar {
@@ -159,17 +168,54 @@ header {
         width: 100%;
     }
 
+    .modal {
+        width: 60%;
+    }
+
     /* Exibir o ícone de menu no celular */
     .menu-icon {
         display: flex; /* Mostrar o ícone de menu */
+        left: 100px;
     }
 
     .modal .menu-icon {
-        left: 210px;
+        top: 10px;
+        left: 160px;
     }
 
     /* Esconder os links de navegação em dispositivos móveis */
     .nav-list {
         display: none; /* Links de navegação são escondidos */
+        left: -15px;
+    }
+
+    .navlink {
+        font-family: "Inria Serif", serif;
+        font-style:italic;
+    }
+    
+    /* Linha abaixo do link quando ele estiver ativo (clicado) */
+    .navlink.active::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #F25042;
+        border-radius: 5px;
+        bottom: 0;
+        transform: scaleX(1);
+        transition: all 0.6s ease;
+    }
+}
+
+@media (max-width: 391px) {
+    .modal .menu-icon {
+        top: 10px;
+        left: 130px;
+    }
+
+    .modal-footer p {
+        font-size: 12px;
+        padding: 0 8px;
     }
 }
