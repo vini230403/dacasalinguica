@@ -1,9 +1,11 @@
 import './sobreNos.css'
 
+import { NavLink } from "react-router-dom"
+
 const SobreNos = () => {
   return (
     <div>
-      <h1>Sobre Nós</h1>
+      <h1 className='titleSobreNos'>Sobre Nós</h1>
       <div className='container'>
         <p className='sobrenos'>
         Bem-vindo à Da Casa, o Sabor da Tradição Artesanal! <br />
@@ -12,7 +14,10 @@ const SobreNos = () => {
         Venha conhecer e se surpreender com a verdadeira experiência da linguiça artesanal!
         </p>
       </div>
-      <img src="/img/cardapio.jpg" alt="cardapio" className='cardapio'/>
+      <div className='footerSobreNos'>
+        <img src="/img/cardapio.jpg" alt="cardapio" className='cardapio'/>
+        <NavLink to="/produtos" className="button">Venha conhecer nossos produtos</NavLink>
+      </div>
     </div>
   )
 }

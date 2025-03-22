@@ -1,10 +1,13 @@
 import './Home.css'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+import { NavLink } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -37,6 +40,7 @@ const Home = () => {
           <img src="/img/pimenta.jpg" alt="pimenta" className='pimenta'/>
         </div>
       </div>
+      <NavLink to="/produtos" className="button">Venha conhecer nossos produtos</NavLink>
     </div>
   )
 }

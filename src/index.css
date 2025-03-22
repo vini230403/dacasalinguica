@@ -6,3 +6,31 @@ body {
     font-style:italic;
 }
 
+.button {
+    margin-top: 1.5rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F25042;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #D94337;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #B02E24;
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: 10px;
+    }
+}

@@ -1,7 +1,6 @@
 .background {
     width: 87vw;
     background-color: #F9F4EF;
-    min-height: 100vh;
     margin:  auto;
     margin-top: 70px;
     display: flex;
@@ -12,5 +11,11 @@
     .background {
         margin-top: 40px;
         min-height: 66vh;
+    }
+}
+
+@media (max-height: 927px) {
+    .background {
+        min-height: 68.8vh;
     }
 }

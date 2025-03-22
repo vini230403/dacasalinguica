@@ -5,7 +5,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 80px;
+    padding: 20px 80px;
+    margin-top: 0px;
     position:relative;
 }
 
@@ -53,15 +54,15 @@ li i {
 }
 
 ul li .phone::before {
-    background-image: url('img/whatsapp.svg');
+    background-image: url('../img/whatsapp.svg');
 }
 
 ul li .email::before {
-    background-image: url('img/Email.svg');
+    background-image: url('../img/Email.svg');
 }
 
 ul li .location::before {
-    background-image: url('img/location.svg');
+    background-image: url('../img/location.svg');
 }
 
 ul li .phone::before,
