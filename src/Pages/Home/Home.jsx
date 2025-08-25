@@ -1,4 +1,3 @@
-import "../../App.css"
 import "./Home.css"
 
 import { useRef } from "react"
@@ -67,7 +66,7 @@ function Home() {
             <img src="/pimenta.jpg" alt="pimenta" className="w-25 md:w-50 h-auto rounded-sm" />
         </div>
 
-        <div className="divider-1"></div>        
+              
 
     </section>
   )

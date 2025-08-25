@@ -1,6 +1,8 @@
 * {
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
+    font-family: var(--subtitle-font);
+    font-weight: bold;
 }
 
 body {

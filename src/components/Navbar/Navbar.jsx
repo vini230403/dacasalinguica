@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="flex justify-between items-center bg-[var(--base-color)] p-3 pr-5 pl-5 md:pr-20 md:pl-20 lg:pr-40 lg:pl-40" id="navbar">
+        <nav className="flex justify-between items-center bg-[var(--base-color)] p-3 pr-5 pl-5 md:pr-20 md:pl-20 lg:pr-40 lg:pl-40 fixed top-0 left-0 w-full z-10" id="navbar">
             <a href="#">
                 <img src="/logo.svg" alt="Logo da empresa" title="Logo da empresa" className="logo w-20 lg:w-24 h-auto"  />
             </a>
