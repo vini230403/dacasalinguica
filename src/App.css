@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+:root {
+  --text-color: #f25042;
+  --body-color: #eaddcf;
+  --title-color: #000000;
+  --base-color: #f9f4ef;
+  --secondary-color: #8C7851;
+  --title-font: "Dancing Script", cursive;
+  --subtitle-font: "Inria Serif", serif;
+}
+
+.subtitle {
+  font-family: "Inria Serif", serif;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  transition: all 0.3s ease;
+  transform-origin: center; 
+  touch-action: manipulation; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.logo:active {
+  transform: scale(0.95); 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover {
+    transform: scale(1.1) rotate(6deg);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.divider-1 {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(170deg, rgba(140, 120, 81, 0.2) 0%, rgba(140, 120, 81, 1) 100%);
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.divider-2 {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(-170deg, rgba(140, 120, 81, 0.2) 0%, rgba(140, 120, 81, 1) 100%);
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
