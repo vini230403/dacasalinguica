@@ -5,6 +5,10 @@
     font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-color);
 }

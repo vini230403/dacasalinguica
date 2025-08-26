@@ -171,13 +171,13 @@ const Footer = () => {
                         md:hover:text-[var(--text-color)]
                     ">
                         <p className="flex items-center justify-center md:justify-start gap-2">
-                            <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
-                                📱
-                            </span>
                             <a 
                                 href="https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, gostaria de saber mais sobre suas linguiças artesanais!"
                                 target="blank" 
                             >
+                            <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
+                                📱
+                            </span>
                                 (11) 93498-1125
                             </a>
                         </p>
@@ -192,13 +192,13 @@ const Footer = () => {
                         md:hover:text-[var(--text-color)]
                     ">
                         <p className="flex items-center justify-center md:justify-start gap-2">
-                            <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
-                                ✉️
-                            </span>
                             <a 
                                 href="mailto:dacasalinguicas@gmail.com "
                                 target="blank" 
                             >
+                            <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
+                                ✉️
+                            </span>
                                 dacasalinguicas@gmail.com 
                             </a>
                         </p>
