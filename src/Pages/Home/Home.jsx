@@ -20,12 +20,8 @@ function Home() {
 
   return (
     <section className="flex flex-col items-center" id="#">
-        <h1 className="title text-4xl md:text-5xl text-center mt-5 mb-5 font-bold text-[var(--text-color)]">
-            Da casa apresenta
-        </h1>
-
         {/* Swiper com Tailwind CSS */}
-        <div className="mx-auto w-full max-w-2xl">
+        <div className="mx-auto w-full max-w-2xl mt-4">
             <Swiper
                 ref={swiperRef}
                 modules={[Pagination, Autoplay]}
@@ -39,7 +35,7 @@ function Home() {
                 slidesPerView={1}
                 loop={true}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                className="w-full max-w-[320px] md:max-w-[600px] rounded-lg border-[6px] border-[var(--text-color)] overflow-hidden shadow-lg"
+                className="w-full max-w-[320px] md:max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] rounded-lg border-[6px] border-[var(--text-color)] overflow-hidden shadow-lg"
             >
                 {carouselImages.map((image) => (
                 <SwiperSlide key={image.id} className="flex justify-center items-center">
