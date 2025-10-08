@@ -6,28 +6,22 @@ function Produto() {
 
   const produtos = [
     {
-      nome: "Provolone",
-      img: "/provolone.png",
-      desc: "Perfeita para os amantes de queijo, com o sabor defumado e intenso do provolone derretido.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor provolone",
+      nome: "Legumes",
+      img: "/legumes.jpg",
+      desc: "Leve e saborosa, feita com pedaços de legumes frescos que trazem equilíbrio e textura ao prato.",
+      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
     },
     {
       nome: "Alho",
-      img: "/alho.png",
+      img: "/alho.jpeg",
       desc: "Tradicional e aromática, com alho na medida certa para um sabor marcante sem exageros.",
       link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor alho",
     },
     {
-      nome: "Bacon",
-      img: "/bacon.png",
-      desc: "Sabor defumado e suculento, com pedacinhos de bacon que fazem toda a diferença.",
+      nome: "Tomate Seco",
+      img: "/tomate_seco.jpg",
+      desc: "Um toque sofisticado com o sabor adocicado e intenso do tomate seco. Ideal para surpreender.",
       link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor cheddar",
-    },
-    {
-      nome: "Frango com alho e mussarela",
-      img: "/frangoalhomussarela.png",
-      desc: "Deliciosa combinação de frango temperado, alho dourado e mussarela derretida. Uma explosão de sabores.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça tradicional",
     },
     {
       nome: "Apimentada",
@@ -35,36 +29,8 @@ function Produto() {
       desc: "Picância equilibrada, perfeita pra quem gosta de um sabor mais quente sem exagerar.",
       link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor apimentada",
     },
-    {
-      nome: "3 queijos",
-      img: "/apimentada.jpg",
-      desc: "Combinação irresistível de mussarela, parmesão e provolone, trazendo cremosidade e sabor marcante.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
-    },
-    {
-      nome: "Azeitona",
-      img: "/apimentada.jpg",
-      desc: "Sabor mediterrâneo com a suavidade da linguiça e o toque salgado das azeitonas selecionadas.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
-    },
-    {
-      nome: "Legumes",
-      img: "/apimentada.jpg",
-      desc: "Leve e saborosa, feita com pedaços de legumes frescos que trazem equilíbrio e textura ao prato.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
-    },
-    {
-      nome: "Tomate seco",
-      img: "/apimentada.jpg",
-      desc: "Um toque sofisticado com o sabor adocicado e intenso do tomate seco. Ideal para surpreender.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
-    },
-    {
-      nome:"Frango na cerveja",
-      img: "/apimentada.jpg",
-      desc: "Maciez e sabor únicos, marinada na cerveja para um toque especial e suculento.",
-      link: "https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, tive interesse na linguiça sabor pimenta",
-    },
+    
+    
   ]
 
   const MASCOTE_LEFT = { id: "mascote-left", mascote: true, img: "/mascote.png" }
@@ -93,7 +59,7 @@ function Produto() {
     <section id="produtos" className="text-center">
       {/* Título */}
       <h1 className="title text-4xl md:text-5xl font-bold text-[var(--text-color)] mb-10">
-        Produtos
+        Em Alta
       </h1>
 
 
