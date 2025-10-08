@@ -76,7 +76,7 @@ const SobreNos = () => {
                 Nosso modo de preparo
             </h2>
             <video muted controls className='w-70 md:w-120 rounded-lg border-[6px] border-[var(--text-color)]'>
-                <source src="/videoPreparo.mp4"  />
+                <source src="/video_fabricacao.mp4"  />
             </video>
         </div>
     </section>
