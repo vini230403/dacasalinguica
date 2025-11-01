@@ -15,12 +15,12 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="flex justify-between items-center bg-[var(--base-color)] p-3 pr-5 pl-5 md:pr-20 md:pl-20 lg:pr-40 lg:pl-40 fixed top-0 left-0 w-full z-10" id="navbar">
+        <nav className="flex justify-between items-center bg-[rgba(242,80,66,0.8)] p-3 pr-5 pl-5 md:pr-20 md:pl-20 lg:pr-25 lg:pl-25 w-full shadow-md border-b-2 border-[var(--border-color)]" id="navbar">
             <a href="#">
                 <img src="/logo.svg" alt="Logo da empresa" title="Logo da empresa" className="logo w-20 lg:w-24 h-auto"  />
             </a>
 
-            <h1 className='title text-2xl lg:text-4xl  text-center font-bold pr-8 pl-8 lg:pr-0 lg:pl-0'>Linguiças Artesanais</h1>
+            <h1 className='title text-2xl lg:text-5xl  text-center font-bold pr-8 pl-8 lg:pr-0 lg:pl-0'>Linguiças Artesanais</h1>
 
             <button onClick={toggleMenu} className='lg:hidden text-white focus:outline-none' aria-label="Menu">
                 <IoIosMenu size={48} className="icone-menu" />
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <li>
                     <a href="#" 
                     className="subtitle
-                        text-[var(--text-color)]
+                        text-[var(--base-color)]
                         text-2xl
                         font-bold
                         relative 
@@ -46,7 +46,7 @@ const Navbar = () => {
                         bottom-[-0.5rem] 
                         w-0 
                         h-0.5 
-                        bg-[var(--text-color)]
+                        bg-[var(--base-color)]
                         transition-all 
                         duration-300
                         group-hover:w-full
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <li>
                     <a href="#produtos"  
                     className="subtitle
-                        text-[var(--text-color)]
+                        text-[var(--base-color)]
                         text-2xl
                         font-bold
                         relative 
@@ -72,7 +72,7 @@ const Navbar = () => {
                         bottom-[-0.5rem] 
                         w-0 
                         h-0.5
-                        bg-[var(--text-color)]
+                        bg-[var(--base-color)]
                         transition-all 
                         duration-300
                         group-hover:w-full
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <li>
                     <a href="#sobrenos"  
                     className="subtitle
-                        text-[var(--text-color)]
+                        text-[var(--base-color)]
                         text-2xl
                         font-bold 
                         relative 
@@ -98,7 +98,7 @@ const Navbar = () => {
                         bottom-[-0.5rem] 
                         w-0 
                         h-0.5 
-                        bg-[var(--text-color)]
+                        bg-[var(--base-color)]
                         transition-all 
                         duration-300
                         group-hover:w-full
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <li>
                     <a href="#contato"
                     className="subtitle
-                        text-[var(--text-color)]
+                        text-[var(--base-color)]
                         text-2xl
                         font-bold 
                         relative 
@@ -124,7 +124,7 @@ const Navbar = () => {
                         bottom-[-0.5rem] 
                         w-0 
                         h-0.5 
-                        bg-[var(--text-color)]
+                        bg-[var(--base-color)]
                         transition-all 
                         duration-300
                         group-hover:w-full
@@ -140,10 +140,10 @@ const Navbar = () => {
                     <IoIosClose size={56} className='icone-close' />
                 </button>
                 <ul className="menu-items">
-                    <li><a href="#" onClick={toggleMenu} className='text-[var(--text-color)] subtitle text-3xl font-bold'>Home</a></li>
-                    <li><a href="#produtos" onClick={toggleMenu}className='text-[var(--text-color)] subtitle text-3xl font-bold'>Produtos</a></li>
-                    <li><a href="#sobrenos"  onClick={toggleMenu}className='text-[var(--text-color)] subtitle text-3xl font-bold'>Sobre nós</a></li>
-                    <li><a href="#contato"  onClick={toggleMenu}className='text-[var(--text-color)] subtitle text-3xl font-bold'>Contato</a></li>
+                    <li><a href="#" onClick={toggleMenu} className='text-[var(--base-color)] subtitle text-3xl font-bold'>Home</a></li>
+                    <li><a href="#produtos" onClick={toggleMenu}className='text-[var(--base-color)] subtitle text-3xl font-bold'>Produtos</a></li>
+                    <li><a href="#sobrenos"  onClick={toggleMenu}className='text-[var(--base-color)] subtitle text-3xl font-bold'>Sobre nós</a></li>
+                    <li><a href="#contato"  onClick={toggleMenu}className='text-[var(--base-color)] subtitle text-3xl font-bold'>Contato</a></li>
                 </ul>
             </div>
         </div>

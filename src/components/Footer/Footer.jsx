@@ -1,9 +1,6 @@
 import "../../App.css"
-
-import { IoLogoInstagram, IoLogoYoutube, IoLogoLinkedin } from "react-icons/io"
-
-
-
+import { FaHome, FaShoppingCart, FaInfoCircle, FaPhone } from "react-icons/fa";
+import { IoLocationSharp, IoLogoWhatsapp, IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -55,7 +52,7 @@ const Footer = () => {
                             md:hover:animate-pulse
                             md:active:animate-none
                             ">
-                            🏠
+                            <FaHome className="text-lg" />
                             </span>
                             Home
                     </a>
@@ -79,7 +76,7 @@ const Footer = () => {
                             md:hover:animate-pulse
                             md:active:animate-none
                             ">
-                            🛒
+                            <FaShoppingCart className="text-lg" />
                             </span>
                             Produtos
                     </a>
@@ -103,7 +100,7 @@ const Footer = () => {
                             md:hover:animate-pulse
                             md:active:animate-none
                             ">
-                            ℹ️
+                            <FaInfoCircle className="text-lg" />
                             </span>
                             Sobre nós
                         </a>
@@ -127,7 +124,7 @@ const Footer = () => {
                             md:hover:animate-pulse
                             md:active:animate-none
                             ">
-                            👋
+                            <FaPhone className="text-lg" />
                             </span>
                             Contato
                         </a>
@@ -153,9 +150,10 @@ const Footer = () => {
                                 href="https://www.google.com/maps/place/São+Paulo,+SP" 
                                 target="blank" 
                                 rel="noopener noreferrer"
+                                className="flex items-center gap-2"
                             >
                                 <span className="inline-block active:animate-pulse md:hover:animate-pulse md:active:animate-none">
-                                    📍
+                                    <IoLocationSharp className="text-lg" />
                                 </span>
                                 São Paulo, SP
                             </a>
@@ -174,9 +172,10 @@ const Footer = () => {
                             <a 
                                 href="https://api.whatsapp.com/send?phone=+5511934981125&text=Olá, gostaria de saber mais sobre suas linguiças artesanais!"
                                 target="blank" 
+                                className="flex items-center gap-2"
                             >
                             <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
-                                📱
+                                <IoLogoWhatsapp className="text-lg" />
                             </span>
                                 (11) 93498-1125
                             </a>
@@ -195,9 +194,10 @@ const Footer = () => {
                             <a 
                                 href="mailto:dacasalinguicas@gmail.com "
                                 target="blank" 
+                                className="flex items-center gap-2"
                             >
                             <span className="inline-block active:animate-pulse  md:hover:animate-pulse md:active:animate-none">
-                                ✉️
+                                <IoMail className="text-lg" />
                             </span>
                                 dacasalinguicas@gmail.com 
                             </a>

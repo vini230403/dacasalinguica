@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar"
 
 import Home from "./Pages/Home/Home"
 import Produto from "./Pages/Produtos/Produto"
-import SobreNos from "./Pages/SobreNos/SobreNos"
+import SobreNos from "./Pages/SobreNos/Sobrenos"
 import Contato from "./Pages/Contato/Contato"
 
 function App() {
@@ -14,11 +14,28 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="mt-35 md:mt-45 mb-15 bg-[var(--base-color)] rounded-lg shadow-lg">
-        <Home />
-        <Produto />
-        <SobreNos />
-        <Contato />  
+      <main className="main-content mb-15">
+        <div className="section-container">
+          <Home />
+        </div>
+        
+        <div className="section-divider"></div>
+        
+        <div className="section-container bg-[var(--base-color)]">
+          <Produto />
+        </div>
+        
+        <div className="section-divider"></div>
+        
+        <div className="section-container">
+          <SobreNos />
+        </div>
+        
+        <div className="section-divider"></div>
+        
+        <div className="section-container bg-[var(--base-color)]">
+          <Contato />
+        </div>
       </main>
       <Footer />
     </>
