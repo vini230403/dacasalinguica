@@ -6,8 +6,8 @@ import Navbar from "./components/Navbar/Navbar"
 
 import Home from "./Pages/Home/Home"
 import Produto from "./Pages/Produtos/Produto"
-import SobreNos from "./Pages/SobreNos/Sobrenos"
 import Contato from "./Pages/Contato/Contato"
+import SobreNos from "./Pages/SobreNos/SobreNos"
 
 function App() {
 
